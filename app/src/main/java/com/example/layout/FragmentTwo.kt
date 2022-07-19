@@ -23,6 +23,7 @@ class FragmentTwo : Fragment() {
         return binding.root
     }
 
+    // TODO: use viewModel to display result instead of navArgs
     private fun bindResult() = with(binding) {
         resultText.text = args.result.toString()
     }
